@@ -24,11 +24,13 @@ jobs_last_build_status = []
 timestamp = datetime.now()
 
 for x in range(0, jobs_number):
+    # get the list of jobs and their last build
     jobs_name.append(server.get_jobs()[x]['name'])
     last_builds_number.append(server.get_job_info(jobs_name[x])[
         'lastBuild']['number'])
 
 for x in range(0, jobs_number):
+    #get the info and status of each build
     jobs_last_build_status.append(server.get_build_info(
         jobs_name[x], last_builds_number[x]))
 
@@ -44,6 +46,7 @@ except sqlite3.Error as e:
 
 try:    
     for x in range(0, jobs_number):
+        # insert the build status on the sqlite table
         c.execute("INSERT INTO {} VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)".format(table_name),
                 (jobs_last_build_status[x]['_class'],
                 str(jobs_last_build_status[x]['id']),

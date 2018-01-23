@@ -1,0 +1,40 @@
+{
+    "_class": "hudson.model.FreeStyleBuild",
+    "actions": [
+        {
+            "_class": "hudson.model.CauseAction",
+            "causes": [            
+                {
+                    "_class": "hudson.model.Cause$UserIdCause",
+                    "shortDescription": "Started by user Goncalo Sousa",
+                    "userId": "gsousa",
+                    "userName": "Goncalo Sousa"
+                }
+            ]
+        },
+        {},
+        {}
+    ],
+    "artifacts": [],
+    "building": false,
+    "description": null,
+    "displayName": "#2",
+    "duration": 83,
+    "estimatedDuration": 407,
+    "executor": null,
+    "fullDisplayName": "job1 #2",
+    "id": "2",
+    "keepLog": false,
+    "number": 2,
+    "queueId": 2,
+    "result": "SUCCESS",
+    "timestamp": 1516376370426,
+    "url": "http://localhost:8080/job/job1/2/",
+    "builtOn": "",
+    "changeSet": {
+        "_class": "hudson.scm.EmptyChangeLogSet",
+        "items": [],
+        "kind": null
+    },
+    "culprits": []
+}

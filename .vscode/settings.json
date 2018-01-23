@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python36\\python.exe",
+    "python.linting.pylintEnabled": false,
+    "python.formatting.provider": "autopep8"
+}
